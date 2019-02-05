@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    ViewBag.Inquiries = "Inquiries";
+    ViewBag.GetInTouch = "Get In Touch +";
+    ViewBag.Advertisement = "Advertisement";
+    ViewBag.QuickEnq = "Quick Inquiry";
+}
+<div>
+    <h3 style="text-align:center"><b>@ViewBag.Title</b></h3>
+</div>
+<div class="col-md-5">
+    <h4><b>@ViewBag.Inquiries</b></h4>
+    <p>
+        In need of some help or need to reach us? This page provides different options to contact us and get in 
+        touch with the iHub Team. Use the form to send Us a quick inquiry or come visit us at our offices. Below 
+        are our contacts and map to our new offices at Senteu Plaza. We occupy both 5th and 6th Floors and you are 
+        always welcome to come and visit.
+    </p>
+    <h4><b>@ViewBag.GetInTouch</b></h4>
+    <p>
+        6th Floor, Senteu Plaza, Galana / Lenana Road Junction, Nairobi Kenya.
+
+        P.O Box 22494 - 00505
+        Nairobi Kenya.
+    </p>
+</div>
+
+<div class="col-md-4 ">
+    <form>
+        <div class="form-group row">
+            <h4><b>@ViewBag.QuickEnq</b></h4>
+            <label for="staticName" hidden>Name</label>
+            <div>
+                <input type="text" readonly="" id="staticName" class="form-control-plaintext" placeholder="First Last">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="staticEmail" hidden>Email</label>
+            <div>
+                <input type="text" readonly="" id="staticemail" class="form-control-plaintext" placeholder="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="exampleTextarea" hidden>Short Message</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Short Message"></textarea>
+        </div>
+        <div class="form-group row">
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+</div>
+<div class="col-md-3">
+    <h4><b>@ViewBag.Advertisement</b></h4>
+    <address>
+        Dalvik Virtual Machine Way<br />
+        Mountainview, Ok 73120<br />
+        <abbr title="Phone">P:</abbr> 425-555-5555
+    </address>
+
+    <address>
+        <strong>Email Me:</strong>   <a href="mailto:pmbandaft@gmail.com">Personal Questions</a><br />
+        <strong>Advertisement:</strong> <a href="mailto:pmbandaft@outlook.com">Post Advertisement</a>
+    </address>
+</div>
+
